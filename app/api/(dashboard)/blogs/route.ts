@@ -86,7 +86,7 @@ export const GET = async (request: Request) => {
       .skip(skip)
       .limit(limit);
 
-    return new NextResponse(JSON.stringify({ blogs }), {
+    return new NextResponse(JSON.stringify(blogs), {
       status: 200,
     });
   } catch (error: any) {

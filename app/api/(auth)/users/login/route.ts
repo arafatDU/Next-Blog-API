@@ -21,7 +21,7 @@ export const POST = async (request: Request) => {
     }
 
     return new NextResponse(
-      JSON.stringify({user}),
+      JSON.stringify(user),
       { status: 200 }
     );
     
